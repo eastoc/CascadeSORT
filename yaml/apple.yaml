@@ -1,0 +1,11 @@
+YOLO:
+  CFG: "cfg/apple.cfg"
+  WEIGHT: "checkpoints/apple_best.weights"
+  CLASS_NAMES: "cfg/apple.names"
+  SCORE_THRESH: 0.5
+  NMS_THRESH: 0.5
+
+TRACK:
+  MODE: "cascade"
+  VIDEO_DIR: "video/apple.mp4"
+  SAVE_DIR: "results/apple.mp4"
