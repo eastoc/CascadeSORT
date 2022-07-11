@@ -1,7 +1,7 @@
 # fruit counting
 This is the official implementation of the paper "Cascade-SORT: A Robust Fruit Counting Approach Using Multiple Features Cascade Matching".
 
-At present, we only support YOLO in Darknet format. More functions will be added in future versions, to be continued...
+At present, This code have beeen verified on MacOS 10.15.6. More functions will be added in future versions, to be continued...
 
 ## Dependencies
 - python 3.8
@@ -18,8 +18,21 @@ At present, we only support YOLO in Darknet format. More functions will be added
 ```
 git clone git@github.com:ZQPei/deep_sort_pytorch.git
 ```
-
-2. Set configuration, revise "yaml/apple.yaml", if the code is run on the custom videos and models
+2. Download the YOLO Weights from the followed links:
+```
+Google Drive:
+```
+``` 
+https://drive.google.com/file/d/1lNvWKdFl36FrY-Cj2vEZrx-H8okXkcbT/view?usp=sharing
+```
+```
+Baidu:
+```
+```
+https://pan.baidu.com/s/1JA5lVb_BkQGbWy_u9bwdug  
+Extract code: 5efn
+```
+3. Set configuration, revise "yaml/apple.yaml", if the code is run on the custom videos and models
 ```python
 YOLO:
   CFG: "cfg/apple.cfg"
@@ -34,7 +47,7 @@ TRACK:
   SAVE_DIR: "results/apple.mp4"
 ```
 
-3. Run demo
+4. Run demo
 ```
 python main.py
 ```

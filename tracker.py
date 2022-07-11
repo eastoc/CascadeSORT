@@ -74,6 +74,7 @@ class Tracker:
 
     def next_frame(self):
         self.flag, self.frame = self.cap.read()
+        self.count += 1
 
     def load_detector(self):
         self.net = cv2.dnn.readNet(self.config.net_dir, self.config.cfg_dir)

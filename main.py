@@ -51,7 +51,6 @@ def main():
         MOT.next_frame()
         print('The count frame is', MOT.count)
         print('-----------------------------------', '\n')
-        MOT.count += 1
     MOT.cap.release()
     MOT.out.release()
     cv2.destroyAllWindows()

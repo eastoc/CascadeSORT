@@ -3,7 +3,6 @@ import yaml
 class C_():
     def __init__(self):
         self.load("yaml/apple.yaml")
-        # self.load("yaml/ycg.yaml")
 
     def load(self, YAML_DIR):
         with open(YAML_DIR, 'r', encoding='utf-8') as file:
